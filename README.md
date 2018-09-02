@@ -1,1 +1,1 @@
-pravnikostrava
+Blanksite readme
