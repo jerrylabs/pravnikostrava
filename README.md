@@ -1,1 +1,1 @@
-Blanksite readme
+Advokátní kancelář JUDr. Jan Handlíř

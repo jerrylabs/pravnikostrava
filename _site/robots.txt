@@ -1,1 +1,1 @@
-Sitemap: https://www.blanksite.cz/sitemap.xml
+Sitemap: https://www.pravnikostrava.cz/sitemap.xml
