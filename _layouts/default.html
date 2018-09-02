@@ -1,29 +1,86 @@
 ---
 ---
-
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="cs">
-<head>
-  <meta charset="utf-8">
-  <link rel="canonical" href="http://www.blanksite.cz/">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="{{'assets/images/favicon.ico' | relative_url }}">
-  <title>Site title</title>
-  <meta name="description" content="Blanksite description">
-  <meta name="author" content="Jaroslav Jerry Kameň">
-  <link rel="stylesheet" href="{{'assets/css/main.css' | relative_url }}">
-  <!--<link rel="stylesheet" type="text/css" href="{{'assets/css/blanksite.css' | relative_url }}"> -->
-  <meta property="og:title" content="Blanksite OG title">
-  <meta property="og:url" content="http://www.blanksite.cz/">
-  <meta property="og:image" content="{{'/assets/images/blanksite-image.png' | relative_url }}">
-  <meta property="og:description" content="Blanksite OG description">
-</head>
-
-<body>
-
-    {{ content }}
-
-</body>
-
+  <head id="head">
+    <meta name="description" content="Advokátní kancelář poskytuje právní služby v širokém spektru právních služeb, a to zejména v oblasti občanského a obchodního práva, ale taktéž práva rodinného, pracovního a trestního.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="právník, ostrava, advokát, advokátní kancelář">
+    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}">
+    <link rel="canonical" href="http://www.pravnikostrava.cz/">
+    <link href="{{ '/assets/css/main.css' | relative_url }}" type="text/css" rel="stylesheet">
+    <link href="{{ '/assets/css/bootstrap.min.css' | relative_url }}" type="text/css" rel="stylesheet" media="screen">
+    <link href="{{ '/assets/css/bootstrap.responsive.min.css' | relative_url }}" type="text/css" rel="stylesheet" media="screen">
+    <link href="http://fonts.googleapis.com/css?family=Parisienne|Paytone+One&amp;subset=latin,latin-ext" type="text/css" rel="stylesheet" media="screen">
+    <link href="{{ '/assets/css/jquery-ui.css' | relative_url }}" type="text/css" rel="stylesheet" media="screen">
+  </head>
+  <body class="body">
+    <div class="wrapper container">
+      <header>
+        <div class="row logo">
+          <div class="col-sm-3">
+            <div class="address">Advokátní kancelář JUDr. Jan Handlíř<br>IČ: 02278511<br>mob. 603 700 335
+              <table>
+                <tbody>
+                  <tr>
+                    <td>e-mail:</td>
+                    <td>handlir@pravnikostrava.cz<br>851013@seznam.cz</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-sm-9"><a href="/">
+              <div class="h1">Advokátní kancelář<br>JUDr. Jan Handlíř</div></a></div>
+        </div>
+        <div class="row main-menu">
+          <div class="col-sm-9 col-sm-offset-3">
+            <ul class="nav nav-pills">
+              <li{% if page.item == '/' %} class="active"{% endif %}><a href="/">Úvod</a></li>
+              <li{% if page.item == 'informace-pro-klienty' %} class="active"{% endif %}><a href="/info/informace-pro-klienty">Informace pro klienty</a></li>
+              <li{% if page.item == 'curiculum-vitae' %} class="active"{% endif %}><a href="/info/curiculum-vitae">Curiculum Vitae</a></li>
+              <li{% if page.item == 'cenik-sluzeb' %} class="active"{% endif %}><a href="/info/cenik-sluzeb">Ceník služeb</a></li>
+              <li{% if page.item == 'kde-nas-najdete' %} class="active"{% endif %}><a href="/info/kde-nas-najdete">Kde nás najdete</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="main-content">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="nav navbar-nav menu-services">
+              <div class="services-toggle">Služby</div>
+              <ul class="nav nav-pills nav-stacked services-menu">
+                <li{% if page.item == 'reseni-sporu' %} class="active"{% endif %}><a href="/sluzby/reseni-sporu">Řešení sporů</a></li>
+                <li{% if page.item == 'sprava-pohledavek' %} class="active"{% endif %}><a href="/sluzby/sprava-pohledavek">Správa pohledávek</a></li>
+                <li{% if page.item == 'smluvni-zavazkove-pravo' %} class="active"{% endif %}><a href="/sluzby/smluvni-zavazkove-pravo">Smluvní (závazkové) právo</a></li>
+                <li{% if page.item == 'nemovitostni-pravo' %} class="active"{% endif %}><a href="/sluzby/nemovitostni-pravo">Nemovitostní právo</a></li>
+                <li{% if page.item == 'spolecenstevni-korporatni-pravo' %} class="active"{% endif %}><a href="/sluzby/spolecenstevni-korporatni-pravo">Společenstevní (korporátní) právo</a></li>
+                <li{% if page.item == 'rodinne-pravo' %} class="active"{% endif %}><a href="/sluzby/rodinne-pravo">Rodinné právo</a></li>
+                <li{% if page.item == 'pracovni-pravo' %} class="active"{% endif %}><a href="/sluzby/pracovni-pravo">Pracovní právo</a></li>
+                <li{% if page.item == 'trestni-pravo' %} class="active"{% endif %}><a href="/sluzby/trestni-pravo">Trestní právo</a></li>
+                <li{% if page.item == 'prestupkove-pravo-spravni-delikty' %} class="active"{% endif %}><a href="/sluzby/prestupkove-pravo-spravni-delikty">Přestupkové právo/správní delikty</a></li>
+                <li{% if page.item == 'insolvencni-pravo' %} class="active"{% endif %}><a href="/sluzby/insolvencni-pravo">Insolvenční právo</a></li>
+                <li{% if page.item == 'mezinarodni-pravo-soukrome' %} class="active"{% endif %}><a href="/sluzby/mezinarodni-pravo-soukrome">Mezinárodní právo soukromé</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <div class="content-wrap">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">vyrobeno v <a href="http://www.jerrylabs.cz">JerryLabs</a> © Advokátní kancelář JUDr. Jan Handlíř 2014-2017</div>
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/jquery-1.10.2.min.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/assets/js/jquery-ui.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/assets/js/jquery.cookie.js' | relative_url }}" type="text/javascript"></script>
+    <script src="{{ '/assets/js/menu.js' | relative_url }}" type="text/javascript"></script>
+  </body>
 </html>
