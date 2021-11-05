@@ -5,7 +5,7 @@ layout: default
 ---
 
 <h1>Kde nás najdete</h1>
-<p>Advokátní kancelář JUDr. Jan Handlíř<br/>	IČ: 02278511<br/>	evidovaný u České advokátní komory pod č. 15277<br/>	sídlem Sokolská třída 1758/4, 702 00 Ostrava<br/>	mob. 603 700 335</p>
+<p>Advokátní kancelář JUDr. Jan Handlíř<br/>	IČ: 02278511<br/>	evidovaný u České advokátní komory pod č. 15277<br/>	sídlem Sokolská třída 451/11, 702 00 Ostrava<br/>	mob. 603 700 335</p>
 <table>
   <tbody>
     <tr>
