@@ -16,4 +16,4 @@ layout: default
 </table>web: www.pravnikostrava.cz
 <p></p>
 <p>ve třetím patře budovy s průjezdem, kde je po levé straně vchod do budovy<br/>	(naproti trolejbusové zastávce Most M. Sýkory, ve směru od nové radnice)</p>
-<iframe frameborder="0" height="190" src="http://api4.mapy.cz/frame?w=308&amp;h=190&amp;x=18.29407808032904&amp;y=49.83720305027322&amp;z=15&amp;o=0&amp;url=http://mapy.cz/s/92em&amp;mini=1&amp;layer=1&amp;dx=18.29407808032904&amp;dy=49.83720305027322&amp;dt=Sokolská třída 1758/4" style="border:none" width="308"></iframe>
+<iframe frameborder="0" height="190" src="https://api4.mapy.cz/frame?w=308&amp;h=190&amp;x=18.29407808032904&amp;y=49.83720305027322&amp;z=15&amp;o=0&amp;url=http://mapy.cz/s/92em&amp;mini=1&amp;layer=1&amp;dx=18.29407808032904&amp;dy=49.83720305027322&amp;dt=Sokolská třída 1758/4" style="border:none" width="308"></iframe>
